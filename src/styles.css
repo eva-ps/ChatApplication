@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+<<<<<<< HEAD
 html,
 body {
   height: 100%;
@@ -35,3 +36,7 @@ body {
 .text-center {
   text-align: center;
 }
+=======
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+>>>>>>> 91c36b669462d05958497590312c01efbaff8561
