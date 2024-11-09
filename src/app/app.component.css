@@ -5,3 +5,21 @@ mat-toolbar {
 .content {
   padding: 32px;
 }
+
+.toolbar-icon {
+  width: 60px;
+  height: 60px;
+  padding-left: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.login-button {
+  font-size: 16.5px;
+  padding: 8px 15px;
+}
+
+.login-icon {
+  font-size: 16.5px;
+  margin-right: 4px;
+}

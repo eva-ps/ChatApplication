@@ -1,19 +1,24 @@
 <mat-toolbar color="primary">
-  Sign up
-<<<<<<< HEAD
-  <button mat-button routerLink="login">
-=======
+  <img src="assets/logo.png" alt="Chat Icon" class="toolbar-icon" />
+  <span>Welcome to the Chat!</span>
 
-  <button mat-button>
->>>>>>> 91c36b669462d05958497590312c01efbaff8561
-    <mat-icon>login</mat-icon>
-    Login
-  </button>
+  <ng-container
+    *ngIf="authService.currentUser$ | async as user; else loginButton"
+  >
+    <button mat-button (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      Logout
+    </button>
+  </ng-container>
+
+  <ng-template #loginButton>
+    <button mat-button routerLink="login" class="login-button">
+      <mat-icon class="login-icon">login</mat-icon>
+      Login
+    </button>
+  </ng-template>
 </mat-toolbar>
-<<<<<<< HEAD
 
 <div class="content">
   <router-outlet> </router-outlet>
 </div>
-=======
->>>>>>> 91c36b669462d05958497590312c01efbaff8561
